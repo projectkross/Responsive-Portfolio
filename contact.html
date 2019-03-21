@@ -9,6 +9,40 @@
 			<title>Kross Pham Portfolio</title>
 	</head>	
 
+	<script>
+(function(apiKey){
+    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
+    v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
+        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
+        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
+        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+
+        // Call this whenever information about your visitors becomes available
+        // Please use Strings, Numbers, or Bools for value types.
+        pendo.initialize({
+            visitor: {
+                id:              'VISITOR-UNIQUE-ID'   // Required if user is logged in
+                // email:        // Optional
+                // role:         // Optional
+
+                // You can add any additional visitor level key-values here,
+                // as long as it's not one of the above reserved names.
+            },
+
+            account: {
+                id:           'ACCOUNT-UNIQUE-ID' // Highly recommended
+                // name:         // Optional
+                // planLevel:    // Optional
+                // planPrice:    // Optional
+                // creationDate: // Optional
+
+                // You can add any additional account level key-values here,
+                // as long as it's not one of the above reserved names.
+            }
+        });
+})('50bfa725-733b-4996-4ef1-01f5c679e710');
+</script>
+	
 	<body> 
 
 		<header>
@@ -47,7 +81,7 @@
 				<h2 id="ConLinks">Connect with me</h2>
 				<div class="LinkIcons">
 					<a class="Icons" href= "https://github.com/projectkross"><img src="assets/images/GitHub.png" alt="GitHub" style="width:55px;"></a>
-				<a class="Icons" href= "www.linkedin.com/in/krosspham"><img src="assets/images/LinkedIn.png" alt="LinkedIn" style="width:55px;"></a>
+				<a class="Icons" href= "https://www.linkedin.com/in/krosspham/"><img src="assets/images/LinkedIn.png" alt="LinkedIn" style="width:55px;"></a>
 				</div>
 			</section>
 
@@ -57,16 +91,6 @@
 	<footer class="Footer">
 		<p id=FooterText>© Copyright 2018 Kross Pham</p>
 		</footer>
-			
-<script>
-(function(apiKey){
-    (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=[];
-    v=['initialize','identify','updateOptions','pageLoad'];for(w=0,x=v.length;w<x;++w)(function(m){
-        o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
-        y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
-        z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
-})('50bfa725-733b-4996-4ef1-01f5c679e710');
-</script>
 
 	</body>
 
